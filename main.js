@@ -1,6 +1,21 @@
 // tady je místo pro náš program
 
-document.querySelector("#vysledek").innerHTML = secti(4, 5);
+
+
+//Vytvořte tlačítko, při jehož stisknutí se změní barva Čtverečekna zelenou.
+
+
+function zmenaBarvy() {
+  document.querySelector('.ctverecek').style.backgroundColor = 'green';
+}
+
+//Upravte kód tak, aby se výsledek funkce secti() zobrazil v prvku s ID vysledek až po stiknutí nově přidaného tlačítka "Zobraz výsledek".
+
+function vysledek() {
+  document.querySelector("#vysledek").innerHTML = secti(4, 5);
+}
+
+//Uprav funkci upozorni() tak, aby se navíc vypisoval text i do konzole a také nahradil text v elementu Čtvereček.
 
 /**
  * Sečte dvě čísla na vstupu a vrátí výsledek
@@ -13,9 +28,12 @@ function secti(a, b) {
   return c;
 }
 
-/**
- * Upozorní uživatele při spuštění.
- */
 function upozorni() {
+  console.log("Gratulace, právě jsi spustila tuto funkci!");
   alert("Gratulace, právě jsi spustila tuto funkci!");
+
+  let ctverecek = document.querySelector('.ctverecek');
+  ctverecek.textContent = "Gratulace, právě jsi spustila tuto funkci!";
+  ctverecek.style.fontSize = '10px';
+  ctverecek.style.width = '200px'
 }
