@@ -15,7 +15,7 @@ function vysledek() {
   document.querySelector("#vysledek").innerHTML = secti(4, 5);
 }
 
-//Uprav funkci upozorni() tak, aby se navíc vypisoval text i do konzole a také nahradil text v elementu Čtvereček.
+
 
 /**
  * Sečte dvě čísla na vstupu a vrátí výsledek
@@ -28,6 +28,8 @@ function secti(a, b) {
   return c;
 }
 
+
+//Uprav funkci upozorni() tak, aby se navíc vypisoval text i do konzole a také nahradil text v elementu Čtvereček.
 function upozorni() {
   console.log("Gratulace, právě jsi spustila tuto funkci!");
   alert("Gratulace, právě jsi spustila tuto funkci!");
